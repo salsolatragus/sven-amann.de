@@ -1,7 +1,7 @@
 # Site wide configuration
 
 title:            Sven Amann
-description:      Software Technology Group, TU Darmstadt
+tagline:          Software Technology Group, TU Darmstadt
 logo: # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale:           en_US

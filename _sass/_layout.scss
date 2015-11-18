@@ -24,7 +24,7 @@
 		@include span-columns(4);
 	}
 	padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
-	height: $masthead-height;
+	height: calc($masthead-height * 2);
 	text-decoration: none;
 	color: $black;
 	font-family: $alt-font;
@@ -32,6 +32,12 @@
 	@include font-size(20,no);
 	line-height: .5 * $masthead-height; // half the height to center vertically
 	text-transform: uppercase;
+  
+  .tagline {
+    color: mix($white,$black,50%);
+    font-weight: 400;
+    @include font-size(14,no);
+  }
 }
 
 
