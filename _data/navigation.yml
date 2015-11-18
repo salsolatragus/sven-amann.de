@@ -1,0 +1,19 @@
+# Site navigation links
+
+- title: Home
+  url: /
+
+- title: Blog
+  url: /blog/
+
+- title: Eko
+  url: /eko/
+
+- title: Let's Developer
+  url: http://letsdeveloper.com
+
+- title: Publications
+  url: /publications/
+
+- title: Contact
+  url: /contact/
