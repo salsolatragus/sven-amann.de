@@ -1,10 +1,9 @@
 ---
-layout: home
+layout: article
 permalink: /
+share: false
 ---
-<img class="alignright" src="images/portrait.jpg" alt="Portrait" width="226" height="300" />
-
-## About Me
+<img style="float:right; margin: 10px" src="images/portrait.jpg" alt="Portrait" width="226" height="300" />
 
 I am PhD student in the Code Recommenders subgroup of the <a href="http://www.stg.tu-darmstadt.de/" target="STG">Software Technology Group</a> at TU Darmstadt.
 
