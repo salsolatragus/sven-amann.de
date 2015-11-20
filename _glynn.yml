@@ -1,5 +1,5 @@
 ftp_host: 'ftp.sven-amann.de'
-ftp_dir: '/sven-amann.de-test'
+ftp_dir: '/sven-amann.de'
 ftp_passive: false
 ftp_port: 21                  # default 21
 ftp_secure: true              # default false
