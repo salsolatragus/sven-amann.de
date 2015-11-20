@@ -1,6 +1,5 @@
 ---
 title: Publications
-menu_index: 4
 author: Sven
 layout: article
 year: 3000
@@ -13,9 +12,11 @@ year: 3000
     <dt><h2>{{ year }}</h2></dt>
   {% endif %}
   <dd>
-    <a href="{{ publication.link }}"><em>{{ publication.title }}</em></a><br/>
-	{{ publication.authors }}<br/>
-	{{ publication.published_in }}
+    <p>
+      <a href="{{ publication.link }}">{{ publication.title }}</a><br/>
+	    {{ publication.authors }}<br/>
+	    {{ publication.published_in }}
+    </p>
   </dd>
 {% endfor %}
 </dl>
