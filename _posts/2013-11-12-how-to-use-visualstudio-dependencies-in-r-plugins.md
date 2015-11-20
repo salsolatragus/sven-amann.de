@@ -1,6 +1,6 @@
 ---
 title: 'Use VisualStudio Dependencies in R# Plugins'
-author: Sven
+author: sven
 layout: article
 permalink: /blog/2013/11/how-to-use-visualstudio-dependencies-in-r-plugins/
 ---

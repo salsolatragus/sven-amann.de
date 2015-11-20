@@ -1,6 +1,6 @@
 ---
 title: Markup in ReSharper Tests
-author: Sven
+author: sven
 layout: article
 permalink: /blog/2013/11/markup-in-resharper-tests/
 categories:

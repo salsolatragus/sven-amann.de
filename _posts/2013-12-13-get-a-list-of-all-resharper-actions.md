@@ -1,6 +1,6 @@
 ---
 title: Get a List of All ReSharper Actions
-author: Sven
+author: sven
 layout: article
 permalink: /blog/2013/12/get-a-list-of-all-resharper-actions/
 categories:

@@ -1,6 +1,6 @@
 ---
 title: Test ReSharper Plugins
-author: Sven
+author: sven
 layout: article
 permalink: /blog/2013/11/testing-resharper-plugins/
 categories:

@@ -1,6 +1,6 @@
 ---
 title: Create a Ninject Kernel that provides VsServices
-author: Sven
+author: sven
 layout: article
 permalink: /blog/2013/11/howto-create-a-ninject-kernel-that-provides-vsservices/
 categories:

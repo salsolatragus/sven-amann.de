@@ -1,6 +1,6 @@
 ---
 title: Agile@Spotify
-author: Sven
+author: sven
 layout: article
 permalink: /blog/2014/03/agilespotify/
 categories:

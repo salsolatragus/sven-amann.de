@@ -1,6 +1,6 @@
 ---
 title: About Actions.xml
-author: Sven
+author: sven
 layout: article
 permalink: /blog/2013/11/about-actions-xml/
 categories:
