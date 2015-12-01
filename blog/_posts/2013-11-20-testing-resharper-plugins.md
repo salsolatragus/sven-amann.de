@@ -2,14 +2,11 @@
 title: Test ReSharper Plugins
 author: sven
 layout: article
-permalink: /blog/2013/11/testing-resharper-plugins/
-categories:
-  - How To
-  - ReSharper
-  - Visual Studio
 tags:
-  - functional testing
-  - testing
+  - Visual Studio
+  - ReSharper
+  - Functional Testing
+  - Testing
 ---
 First thing you have to understand, when it comes to <a title="ReSharper 8 - Testing" href="http://confluence.jetbrains.com/display/NETCOM/2.10+Testing+%28R8%29" target="_blank">R# test projects</a>, is that they are really meant for <a title="Functional Testing - Wikipedia" href="http://en.wikipedia.org/wiki/Functional_testing" target="_blank">functional testing</a>. When you run the tests, R# starts an in-memory R# environment (that is what takes so long), loads your test data, and only then actually executes your tests.
 
@@ -37,7 +34,8 @@ For the sake of this example, I assume that I have implemented an extension for 
 
 I pick the CodeCompletionTestBase as the base-test. The name sounds right. The test skeleton looks like this:
 
-<pre class="brush: csharp; title: ; notranslate" title="">using JetBrains.ReSharper.Feature.Services.Test.CSharp.FeatureServices.CodeCompletion;
+{% highlight csharp %}
+using JetBrains.ReSharper.Feature.Services.Test.CSharp.FeatureServices.CodeCompletion;
 using JetBrains.ReSharper.TestFramework;
 using NUnit.Framework;
 
@@ -54,7 +52,8 @@ public class CodeCompletionListTest : CodeCompletionTestBase
     {
         get { return false; }
     }
-}</pre>
+}
+{% endhighlight %}
 
 The property `ExecuteAction` is declared abstract in the base class. Executing the action means that the code completion will be committed and the result of the transformation will be tested. Not executing the action will result in the item list to be checked. This is what I want, hence, I set the property to `false`.
 
@@ -62,58 +61,72 @@ The property `ExecuteAction` is declared abstract in the base class. Executing t
 
 As I already explained, the test is going to run on some test data, i.e., some code in which a code completion is invoked. Such test data is to be placed below
 
-<pre>%TestProjectDir%testdata</pre>
+{% highlight text %}
+%TestProjectDir%/testdata
+{% endhighlight %}
 
 The sub-path of a concrete test&#8217;s test data is determined by the test class&#8217;s `RelativeTestDataPath` property, which I override for my test like so:
 
-<pre class="brush: csharp; title: ; notranslate" title="">protected override string RelativeTestDataPath
+{% highlight csharp %}
+protected override string RelativeTestDataPath
 {
-    get { return "CodeCompletion\FooLookupItem"; }
-}</pre>
+    get { return "CodeCompletion\\FooLookupItem"; }
+}
+{% endhighlight %}
 
 I define a first test scenario in the following file
 
-<pre class="brush: csharp; title: %TestData%/CodeCompletion/FooLookupItem/HappyPath.cs; notranslate" title="%TestData%/CodeCompletion/FooLookupItem/HappyPath.cs">class HappyPath
+<figure>
+{% highlight csharp %}
+class HappyPath
 {
     void Method(object obj)
     {
         obj.{caret}
     }
-}</pre>
+}
+{% endhighlight %}
+  <figcaption>File: %TestData%/CodeCompletion/FooLookupItem/HappyPath.cs</figcaption>
+</figure>
 
 It&#8217;s a minimal code snippet necessary to trigger code completion on some instance reference. The [marker][2] {caret} tells R# were to place the caret before executing the test.
 
-<p style="padding-left: 30px;">
-  <strong>Attention:</strong> In VisualStudio you cannot add this file to your project, since the markup renders it uncompilable, what prevents test execution. This means that you have to manage the files outside VisualStudio and that VisualStudio will not keep track of the test-data files&#8217;s version-control status&#8230; An alternative is to <a title="ReSharper 8 - Test-Data File Extensions" href="http://confluence.jetbrains.com/display/NETCOM/2.10+Testing+%28R8%29#2.10Testing%28R8%29-ANoteonFileExtensions" target="_blank">change the default file extension for test-data files</a>.
-</p>
+**Attention:** In VisualStudio you cannot add this file to your project, since the markup renders it uncompilable, what prevents test execution. This means that you have to manage the files outside VisualStudio and that VisualStudio will not keep track of the test-data files&#8217;s version-control status&#8230; An alternative is to <a title="ReSharper 8 - Test-Data File Extensions" href="http://confluence.jetbrains.com/display/NETCOM/2.10+Testing+%28R8%29#2.10Testing%28R8%29-ANoteonFileExtensions" target="_blank">change the default file extension for test-data files</a>.
 
 ## Test Execution
 
 To make the test run with the newly created data file, I insert the call
 
-<pre class="brush: csharp; title: ; notranslate" title="">DoOneTest("HappyPath")</pre>
+{% highlight csharp %}
+DoOneTest("HappyPath")
+{% endhighlight %}
 
 into the test method in the skeleton. On execution, R# loads the file into a virtual test project, opens the file, and places the caret at the marked position. The base-test then triggers the code completion at the current caret position and captures the LookupItem list.
 
 When I run the test at this point (by executing Unit Test in the test project), the test fails with an error message saying that the gold file for the test was not found. The output generated by the test, i.e., the line-wise serialization of the encountered LookupItem list, can afterwards be found in the file
 
-<pre>%TestData%CodeCompletionFooLookupItemHappyPath.cs.tmp</pre>
+{% highlight text %}
+%TestData%/CodeCompletion/FooLookupItem/HappyPath.cs.tmp
+{% endhighlight %}
 
 ## Gold File
 
 To complete my test case, I add the expected test outcome, i.e., the gold file. For the happy-path test it looks like this:
 
-<pre class="brush: plain; title: %TestData%/CodeCompletion/FooLookupItem/HappyPath.cs.gold; notranslate" title="%TestData%/CodeCompletion/FooLookupItem/HappyPath.cs.gold">+ Equals
+<figure>
+{% highlight text %}
++ Equals
 Foo
 + GetHashCode
 + GetType
 + MemberwiseClone
 + Method
-+ ToString</pre>
++ ToString
+{% endhighlight %}
+  <figcaption>%TestData%/CodeCompletion/FooLookupItem/HappyPath.cs.gold</figcaption>
+</figure>
 
-<p style="padding-left: 30px;">
-  <strong>Note:</strong> The + designates preferred items, what follows after is the display name as shown in the IDE. The list is ordered alphabetically by the base-test.
-</p>
+**Note:** The + designates preferred items, what follows after is the display name as shown in the IDE. The list is ordered alphabetically by the base-test.
 
 Now the test passes, as the contents of the tmp file and the gold file match. As a result, the tmp file is deleted after the test run.
 
