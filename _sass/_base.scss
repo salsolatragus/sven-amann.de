@@ -179,6 +179,7 @@ figcaption {
     padding-right: 0;
   }
   font-family: $alt-font;
+  text-align: center;
   @include font-size(14,yes);
   color: $caption-color;
   clear: both;
@@ -190,6 +191,10 @@ figcaption {
       border-bottom-style: solid;
     }
   }
+}
+
+.highlight + figcaption {
+  margin-top: $doc-line-height * -1px;
 }
 
 .half,
