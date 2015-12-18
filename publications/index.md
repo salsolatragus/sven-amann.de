@@ -13,7 +13,18 @@ year: 3000
   {% endif %}
   <dd>
     <p>
-      <a href="{{ publication.link }}">{{ publication.title }}</a><br/>
+      <strong>
+      {% if publication.link != nil %}
+        <a href="{{ publication.link }}">
+      {% endif %}
+      {{ publication.title }}
+      {% if !publication.link != nil %}
+        </a>
+      {% else %}
+        <em>(Accepted)</em>
+      {% endif %}
+      </strong>
+      <br/>
 	    {{ publication.authors }}<br/>
 	    {{ publication.published_in }}
     </p>
