@@ -27,7 +27,10 @@ year: 3000
       </strong>
       <br/>
 	    {{ publication.authors }}<br/>
-	    {{ publication.published_in }}
+	    {{ publication.published_in }}<br/>
+      {% if publication.preprint != nul %}
+        [<a href="{{ site.url }}/publications/{{ publication.preprint }}">preprint</a>]
+      {% endif %}
     </p>
   </dd>
 {% endfor %}
