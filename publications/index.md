@@ -14,6 +14,7 @@ year: 3000
   <dd>
     <p>
       <strong>
+      <a name="{{ publication.key }}"></a>
       {% if publication.link != nil %}
         <a href="{{ publication.link }}">
       {% endif %}
