@@ -3,6 +3,7 @@
   authors: "Amann, Sven ; Proksch, Sebastian ; Nadi, Sarah ; Mezini, Mira"
   published_in: "Proceedings of the 23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering - SANER 2016"
   year: 2016
+  preprint: vs-in-practive-saner16.pdf
 
 - key: ABKG15
   title: "Software Mining Studies: Goals, Approaches, Artifacts, and Replicability"
