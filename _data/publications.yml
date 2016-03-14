@@ -1,3 +1,10 @@
+- key: ANNNM16
+  title: "MUBench: A Benchmark for API-Misuse Detectors"
+  authors: "Amann, Sven; Nadi, Sarah; Nguyen, Hoan A.; Nguyen, Tien N.; Mezini, Mira"
+  published_in: "Proceedings of the 13th International Conference on Mining Software Repositories"
+  year: 2016
+  preprint: mubench-msr16.pdf
+
 - key: APNM16
   title: A Study of Visual Studio Usage in Practice
   authors: "Amann, Sven ; Proksch, Sebastian ; Nadi, Sarah ; Mezini, Mira"
