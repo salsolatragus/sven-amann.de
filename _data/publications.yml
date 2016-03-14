@@ -1,39 +1,46 @@
-- title: A Study of Visual Studio Usage in Practice
+- key: APNM16
+  title: A Study of Visual Studio Usage in Practice
   authors: "Amann, Sven ; Proksch, Sebastian ; Nadi, Sarah ; Mezini, Mira"
   published_in: "Proceedings of the 23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering - SANER 2016"
   year: 2016
 
-- title: "Software Mining Studies: Goals, Approaches, Artifacts, and Replicability"
+- key: ABKG15
+  title: "Software Mining Studies: Goals, Approaches, Artifacts, and Replicability"
   authors: "Amann, Sven ; Beyer, Stefanie ; Kevic, Katja ; Gall, Harald"
   link: http://laser.inf.ethz.ch/2014/
   published_in: LASER Summer School 2013-2014 (Springer)
   year: 2015
 
-- title: Towards Standardized Evaluation of Developer-Assistance Tools
+- key: PAM14
+  title: Towards Standardized Evaluation of Developer-Assistance Tools
   authors: "Proksch, Sebastian ; Amann, Sven ; Mezini, Mira"
   link: http://dx.doi.org/10.1145/2593822.2593827
   published_in: Proceedings of the 4th International Workshop on Recommendation Systems for Software Engineering - RSSE 2014
   year: 2014
 
-- title: Method-Call Recommendations from Implicit Developer Feedback
+- key: APM14
+  title: Method-Call Recommendations from Implicit Developer Feedback
   authors: "Amann, Sven ; Proksch, Sebastian ; Mezini, Mira"
   link: http://dx.doi.org/10.1145/2593728.2593730
   published_in: Proceedings of the 1st International Workshop on CrowdSourcing in Software Engineering - CSI-SE 2014
   year: 2014
 
-- title: An Empirical Study on Program Comprehension with Reactive Programming
+- key: SAPM14
+  title: An Empirical Study on Program Comprehension with Reactive Programming
   authors: "Salvaneschi, Guido ; Amann, Sven ; Proksch, Sebastian ; Mezini, Mira"
   link: http://dx.doi.org/10.1145/2635868.2635895
   published_in: Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering - FSE 2014
   year: 2014
 
-- title: Code Completion Based on Implicit User Feedback
+- key: A13
+  title: Code Completion Based on Implicit User Feedback
   authors: "Amann, Sven"
   link: http://tubiblio.ulb.tu-darmstadt.de/65528/
   published_in: "Technische Universität Darmstadt, Master Thesis"
   year: 2013
 
-- title: Spezifikation und Codegenerierung von Sicherheitsautomaten
+- key: A09
+  title: Spezifikation und Codegenerierung von Sicherheitsautomaten
   authors: "Amann, Sven"
   link: http://tubiblio.ulb.tu-darmstadt.de/42129/
   published_in: "Technische Universität Darmstadt, Bachelor Thesis"
