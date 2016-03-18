@@ -11,6 +11,8 @@
   published_in: "Proceedings of the 23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering - SANER 2016"
   year: 2016
   preprint: vs-in-practive-saner16.pdf
+  slides: http://www.slideshare.net/SvenAmann/a-study-of-visual-studio-usage-in-practice-saner-16
+  images: https://www.flickr.com/photos/svamann/albums/72157663743817303
 
 - key: ABKG15
   title: "Software Mining Studies: Goals, Approaches, Artifacts, and Replicability"
