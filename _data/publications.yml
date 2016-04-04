@@ -17,9 +17,10 @@
 - key: ABKG15
   title: "Software Mining Studies: Goals, Approaches, Artifacts, and Replicability"
   authors: "Amann, Sven ; Beyer, Stefanie ; Kevic, Katja ; Gall, Harald"
-  link: http://laser.inf.ethz.ch/2014/
+  link: http://www.springer.com/gb/book/9783319284057
   published_in: LASER Summer School 2013-2014 (Springer)
   year: 2015
+  preprint: sms-gaar-springer15.pdf
 
 - key: PAM14
   title: Towards Standardized Evaluation of Developer-Assistance Tools
