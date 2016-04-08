@@ -5,6 +5,12 @@
   year: 2016
   preprint: mubench-msr16.pdf
 
+- key: PANM16
+  title: "A Dataset of Simplified Syntax Trees for C#"
+  authors: "Proksch, Sebastian; Amann, Sven; Nadi, Sarah; Mezini, Mira"
+  published_in: "Proceedings of the 13th International Conference on Mining Software Repositories"
+  year: 2016
+
 - key: APNM16
   title: A Study of Visual Studio Usage in Practice
   authors: "Amann, Sven ; Proksch, Sebastian ; Nadi, Sarah ; Mezini, Mira"
