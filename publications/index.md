@@ -31,6 +31,9 @@ year: 3000
       {% if publication.preprint != nul %}
         [<a href="{{ site.url }}/publications/{{ publication.preprint }}">preprint</a>]
       {% endif %}
+      {% if publication.artifacts != nul %}
+        [<a href="{{ publication.artifacts }}">artifact page</a>]
+      {% endif %}
       {% if publication.slides %}
         [<a href="{{ publication.slides }}">slides</a>]
       {% endif %}
