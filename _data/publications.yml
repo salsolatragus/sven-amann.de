@@ -1,7 +1,7 @@
 - key: ANNNM16
   title: "MUBench: A Benchmark for API-Misuse Detectors"
   authors: "Amann, Sven; Nadi, Sarah; Nguyen, Hoan A.; Nguyen, Tien N.; Mezini, Mira"
-  published_in: "Proceedings of the 13th International Conference on Mining Software Repositories"
+  published_in: "Proceedings of the 13th International Conference on Mining Software Repositories - MSR 2016"
   year: 2016
   preprint: mubench-msr16.pdf
   artifacts: https://github.com/stg-tud/MUBench
@@ -9,7 +9,7 @@
 - key: PANM16
   title: "A Dataset of Simplified Syntax Trees for C#"
   authors: "Proksch, Sebastian; Amann, Sven; Nadi, Sarah; Mezini, Mira"
-  published_in: "Proceedings of the 13th International Conference on Mining Software Repositories"
+  published_in: "Proceedings of the 13th International Conference on Mining Software Repositories - MSR 2016"
   year: 2016
   artifacts: http://www.st.informatik.tu-darmstadt.de/artifacts/sst/
 
