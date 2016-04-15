@@ -4,12 +4,14 @@
   published_in: "Proceedings of the 13th International Conference on Mining Software Repositories"
   year: 2016
   preprint: mubench-msr16.pdf
+  artifacts: https://github.com/stg-tud/MUBench
 
 - key: PANM16
   title: "A Dataset of Simplified Syntax Trees for C#"
   authors: "Proksch, Sebastian; Amann, Sven; Nadi, Sarah; Mezini, Mira"
   published_in: "Proceedings of the 13th International Conference on Mining Software Repositories"
   year: 2016
+  artifacts: http://www.st.informatik.tu-darmstadt.de/artifacts/sst/
 
 - key: APNM16
   title: A Study of Visual Studio Usage in Practice
@@ -17,6 +19,7 @@
   published_in: "Proceedings of the 23rd IEEE International Conference on Software Analysis, Evolution, and Reengineering - SANER 2016"
   year: 2016
   preprint: vs-in-practive-saner16.pdf
+  artifacts: http://www.st.informatik.tu-darmstadt.de/artifacts/vs-in-practice/
   slides: http://www.slideshare.net/SvenAmann/a-study-of-visual-studio-usage-in-practice-saner-16
   images: https://www.flickr.com/photos/svamann/albums/72157663743817303
 
