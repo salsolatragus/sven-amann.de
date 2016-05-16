@@ -13,6 +13,8 @@
   year: 2016
   preprint: mubench-msr16.pdf
   artifacts: https://github.com/stg-tud/MUBench/tree/MSR16
+  slides: http://www.slideshare.net/SvenAmann/mubench-a-benchmark-for-apimisuse-detectors-msr-16
+  images: https://flic.kr/s/aHsktbJkYK
 
 - key: PANM16
   title: "A Dataset of Simplified Syntax Trees for C#"
