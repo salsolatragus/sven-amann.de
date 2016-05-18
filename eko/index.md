@@ -15,7 +15,7 @@ In my [Software Campus][1] project Eko, I want to develop an assistance tool th
 
 With my project partner [DHL IT Services][3], I want to deploy our assistance tools in an industrial setting and evaluate how developers make use of them in their every-day work. Real-world studies like this are very costly, but present an enormous value to the research community. At the same time, the project improves the state-of-the-art tool chain of DHL&#8217;s developers, helping them to build and maintain high-quality software even faster.
 
-More information about the project are available on <a href="http://www.softwarecampus.de/aktuelles/forschungsprojekte/projekt/eko-korrekte-wiederverwendung-von-bestehenden-softwarekomponenten-mit-hilfe-von-assistenzsystemen/" target="_blank">the official website of the Software Campus program</a> (German only).
+More information about the project are available on <a href="http://www.softwarecampus.de/aktuelles/forschungsprojekte/projekt/eko-intelligente-entwicklungswerkzeuge-zur-korrekten-wiederverwendung-bestehender-softwarekomponenten/" target="_blank">the official website of the Software Campus program</a> (German only).
 
  [1]: http://www.softwarecampus.de/
  [2]: http://kave.cc
