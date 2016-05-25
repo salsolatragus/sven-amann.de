@@ -21,6 +21,7 @@
   authors: "Proksch, Sebastian; Amann, Sven; Nadi, Sarah; Mezini, Mira"
   published_in: "Proceedings of the 13th International Conference on Mining Software Repositories - MSR 2016"
   year: 2016
+  preprint: sst-data-msr16.pdf
   artifacts: http://www.st.informatik.tu-darmstadt.de/artifacts/sst/
 
 - key: APNM16
