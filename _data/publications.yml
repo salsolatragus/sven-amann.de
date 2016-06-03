@@ -15,6 +15,7 @@
   artifacts: https://github.com/stg-tud/MUBench/tree/MSR16
   slides: http://www.slideshare.net/SvenAmann/mubench-a-benchmark-for-apimisuse-detectors-msr-16
   images: https://flic.kr/s/aHsktbJkYK
+  link: http://dl.acm.org/citation.cfm?id=2903506
 
 - key: PANM16
   title: "A Dataset of Simplified Syntax Trees for C#"
@@ -23,6 +24,7 @@
   year: 2016
   preprint: sst-data-msr16.pdf
   artifacts: http://www.st.informatik.tu-darmstadt.de/artifacts/sst/
+  link: http://dl.acm.org/citation.cfm?id=2903507
 
 - key: APNM16
   title: A Study of Visual Studio Usage in Practice
