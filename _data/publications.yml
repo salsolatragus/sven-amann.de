@@ -1,3 +1,9 @@
+- key: PANM16.2
+  title: "Evaluating the Evaluations of Code Recommender Systems: A Reality Check"
+  authors: "Proksch, Sebastian; Amann, Sven; Nadi, Sarah; Mezini, Mira"
+  published_in: "Proksch of the 31st International Conference on Automated Software Engineering - ASE 2016"
+  year: 2016
+
 - key: APN16
   title: "FeedBaG: An Interaction Tracker for Visual Studio"
   authors: "Amann, Sven; Proksch, Sebastian; Nadi, Sarah"
