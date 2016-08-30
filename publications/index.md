@@ -6,7 +6,7 @@ year: 3000
 ---
 
 <dl>
-{% assign publications = site.publications | sort: "year" | reverse %}
+{% assign publications = site.publications | sort: "url" | reverse %}
 {% for publication in publications %}
   {% if year != publication.year %}
     {% assign year = publication.year %}
