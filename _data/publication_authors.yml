@@ -1,0 +1,40 @@
+proksch:
+  name: Proksch
+  firstname: Sebastian
+  mail: proksch@st.informatik.tu-darmstadt.de
+amann:
+  name: Amann
+  firstname: Sven
+  mail: amann@st.informatik.tu-darmstadt.de
+nadi:
+  name: Nadi
+  firstname: Sarah
+  mail: nadi@ualberta.ca
+mezini:
+  name: Mezini
+  firstname: Mira
+  mail: mezini@st.informatik.tu-darmstadt.de
+hoan:
+  name: Nguyen
+  firstname: Hoan Anh
+  mail: hoan@iastate.edu
+tien:
+  name: Nguyen
+  firstname: Tien N.
+  mail: tien.n.nguyen@utdallas.edu
+beyer:
+  name: Beyer
+  firstname: Stefanie
+  mail: stefanie.beyer@aau.at
+kevic:
+  name: Kevic
+  firstname: Katja
+  mail: kevic@ifi.uzh.ch
+gall:
+  name: Gall
+  firstname: Harald C.
+  mail: gall@ifi.uzh.ch
+salvaneschi:
+  name: Salvaneschi
+  firstname: Guido
+  mail: salvaneschi@st.informatik.tu-darmstadt.de

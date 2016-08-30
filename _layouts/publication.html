@@ -1,0 +1,95 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+	<article class="wrap" itemscope itemtype="http://schema.org/Article">
+		{% if page.image.feature %}
+		<div class="page-feature">
+			<div class="page-image">
+				<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+				{% if page.image.credit %}{% include image-credit.html %}{% endif %}
+			</div><!-- /.page-image -->
+		</div><!-- /.page-feature -->
+		{% endif %}
+		{% include breadcrumbs.html %}
+		<div class="page-title">
+			<h1>{{ page.title }}</h1>
+		</div>
+		<div class="inner-wrap">
+			<div id="content" class="page-content" itemprop="articleBody">
+        <span>by {% for author_id in page.authors %}
+        {% if forloop.last %}{% unless forloop.first %}
+          and
+        {% endunless %}{% endif %}
+        {% assign author = site.data.publication_authors[author_id] %}
+        {% if author.mail %}<a href="mailto:{{ author.mail }}">{% endif %}{{ author.firstname }} {{ author.name }}{% if author.mail %}</a>{% endif %}{% unless forloop.last %},{% endunless %}
+      {% endfor %}</span>
+        
+        <p>
+          <strong>Abstract:</strong>
+          <em>{{ page.abstract }}</em>
+        </p>
+        
+				{{ content }}
+        
+        <h2>Resources</h2>
+        <ul>
+          {% if page.preprint %}
+            <li><a href="{{ site.url }}/publications/{{ page.preprint }}">Download preprint</a></li>
+          {% endif %}
+          {% if page.doi %}
+            <li><a href="http://dx.doi.org/{{ page.doi }}">Visit publisher page (via DOI)</a></li>
+          {% endif %}
+          {% if page.publisher_link %}
+            <li><a href="{{ page.publisher_link }}">Visit publisher page</a></li>
+          {% endif %}
+          {% if page.artifact_page %}
+            <li><a href="{{ page.artifact_page }}">Visit artifact page</a></li>
+          {% endif %}
+          {% if page.slides %}
+            <li><a href="{{ page.slides }}">See slides of the talk</a></li>
+          {% endif %}
+          {% if page.images %}
+            <li><a href="{{ page.images }}">See slide images</a></li>
+          {% endif %}
+        </ul>
+        
+        <h2>BibTeX</h2>
+        {% case page.type %}
+        {% when "conference" %}
+          {% assign bibtex_tag="inproceedings" %}
+          {% assign bibtex_format="booktitle" %}
+        {% when "chapter" %}
+          {% assign bibtex_tag="inbook" %}
+          {% assign bibtex_format="booktitle" %}
+        {% when "mastersthesis" %}
+          {% assign bibtex_tag="mastersthesis" %}
+          {% assign bibtex_format=nil %}
+        {% when "bachelorthesis" %}
+          {% assign bibtex_tag="bachelorthesis" %}
+          {% assign bibtex_format=nil %}
+        {% endcase %}
+        <pre class="bibtex">
+@{{ bibtex_tag }} {{ "{" }}{{ page.key }},
+  title = {{ "{{" }}{{ page.title }}}},
+  author = {{ "{" }}{% for author_id in page.authors %}{% assign author = site.data.publication_authors[author_id] %}{{ author.name }}, {{ author.firstname }}{% unless forloop.last %} and {% endunless %}{% endfor %}},{% if bibtex_format %}
+  {{ bibtex_format }} = {{ "{{" }}{{ page.published_in }}}},{% endif %}{% if page.series %}
+  series = {{ "{" }}{{ page.series }}},{% endif %}{% if page.pages %}
+  pages = {{ "{" }}{{ page.pages }}},{% endif %}
+  year = {{ "{" }}{{ page.year }}},{% if page.doi %}
+  doi = {{ "{" }}{{ page.doi }}},
+  url = {{ "{http://dx.doi.org/" }}{{ page.doi }}},{% endif %}{% if page.publisher %}
+  publisher = {{ "{" }}{{ page.publisher }}},{% endif %}{% if page.additional_bibtex %}
+  {{ page.additional_bibtex }}{% endif %}
+}
+        </pre>
+				<hr />
+				<footer class="page-footer">
+					{% if page.share != false %}{% include share-this.html %}{% endif %}
+					{% include page-meta.html %}
+				</footer><!-- /.footer -->
+			</div><!-- /.content -->
+		</div><!-- /.inner-wrap -->
+	</article><!-- ./wrap -->
+</div><!-- /#main -->

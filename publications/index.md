@@ -6,7 +6,8 @@ year: 3000
 ---
 
 <dl>
-{% for publication in site.data.publications %}
+{% assign publications = site.publications | sort: "year" | reverse %}
+{% for publication in publications %}
   {% if year != publication.year %}
     {% assign year = publication.year %}
     <dt><h2>{{ year }}</h2></dt>
@@ -14,25 +15,30 @@ year: 3000
   <dd>
     <p>
       <strong>
-      <a name="{{ publication.key }}"></a>
-      {% if publication.link != nil %}
-        <a href="{{ publication.link }}">
-      {% endif %}
-      {{ publication.title }}
-      {% if !publication.link != nil %}
-        </a>
-      {% else %}
-        <em>(Accepted)</em>
-      {% endif %}
+        <a name="{{ publication.key }}"></a><a name="{{ publication.slug }}"></a>
+        <a href="{{ publication.url }}">{{ publication.title }}</a>
       </strong>
       <br/>
-	    {{ publication.authors }}<br/>
-	    {{ publication.published_in }}<br/>
+	    by {% for author_id in publication.authors %}
+        {% if forloop.last %}{% unless forloop.first %}
+          and
+        {% endunless %}{% endif %}
+        {% assign author = site.data.publication_authors[author_id] %}
+        {% if author.mail %}<a href="mailto:{{ author.mail }}">{% endif %}{{ author.firstname }} {{ author.name }}{% if author.mail %}</a>{% endif %}{% unless forloop.last %},{% endunless %}
+      {% endfor %}<br/>
+      {% if publication.doi %}In{% elsif publication.publisher_link %}{% else %}To be published in{% endif %}
+	    <em>{{ publication.published_in }}</em><br/>
+      {% if publication.doi %}
+        [<a href="http://dx.doi.org/{{ publication.doi }}">publication (via DOI)</a>]
+      {% endif %}
+      {% if publication.publisher_link %}
+        [<a href="{{ publication.publisher_link }}">publication</a>]
+      {% endif %}
       {% if publication.preprint != nul %}
         [<a href="{{ site.url }}/publications/{{ publication.preprint }}">preprint</a>]
       {% endif %}
-      {% if publication.artifacts != nul %}
-        [<a href="{{ publication.artifacts }}">artifact page</a>]
+      {% if publication.artifact_page != nul %}
+        [<a href="{{ publication.artifact_page }}">artifact page</a>]
       {% endif %}
       {% if publication.slides %}
         [<a href="{{ publication.slides }}">slides</a>]
