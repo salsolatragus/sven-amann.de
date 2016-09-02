@@ -17,3 +17,8 @@ I lead <a href="http://sven-amann.de/eko/" target="_blank">the Eko Software Camp
 My general research interests include: developer-assistance tools, bug detection, mining software repositories, developer behavior, software testing, and static analysis.
 
 I am a teacher and student of Software Engineering topics in general. My activities include <a href="http://www.stg.tu-darmstadt.de/staff/sven_amann/" target="_blank">university-level courses</a>, <a href="http://letsdeveloper.com/2015/03/1st-darmstadter-legacy-code-retreat/" target="_blank">Code Retreats</a>, <a href="http://youtube.com/letsdeveloper" target="_blank">the Let&#8217;s Developer YouTube Channel</a> and individual consultancy.
+
+I serve on the following committees:
+
+  * [MSR'17 Mining Challenge](http://2017.msrconf.org/#/challenge)
+  * [SANER'17](http://saner.aau.at/call-for-papers-tool-track/)
