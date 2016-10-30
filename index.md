@@ -19,8 +19,9 @@ In the past, I've also been a core contributor to [the KaVE Software Campus pr
 
 I serve on the following committees:
 
+  * [FSE'17 Tool Demonstrations](http://esec-fse17.uni-paderborn.de/call_tooldemos.php)
   * [MSR'17 Mining Challenge](http://2017.msrconf.org/#/challenge)
-  * [SANER'17](http://saner.aau.at/call-for-papers-tool-track/)
+  * [SANER'17 Tools Track](http://saner.aau.at/call-for-papers-tool-track/)
 
 I am a teacher and student of Software Engineering topics in general. My activities include
 [university-level courses](http://www.stg.tu-darmstadt.de/staff/sven_amann/),
