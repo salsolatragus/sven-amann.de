@@ -6,7 +6,10 @@ tags:
   - Visual Studio
   - Ninject
   - Dependency Injection
+comments: true
+
 ---
+
 Making Visual Studio services available in a Ninject Kernel is actually a fairly easy task. All you need to do is to implement an `IMissingBindingResolver` (let&#8217;s call it `VsServiceResolver`) and register it to the kernel with
 
 {% highlight csharp %}

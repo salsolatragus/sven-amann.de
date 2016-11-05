@@ -2,7 +2,10 @@
 title: 'Use VisualStudio Dependencies in R# Plugins'
 author: sven
 layout: article
+comments: true
+
 ---
+
 Let&#8217;s assume you want to write a ReSharper plugin for use in VisualStudio. Respectively, this extension accesses services provided by VisualStudio, such as the <a href="http://msdn.microsoft.com/en-us/library/vstudio/envdte.dte.aspx" target="_blank"><code>DTE</code></a> (made available by <a href="http://confluence.jetbrains.com/display/NETCOM/2.02+Component+Model+%28R8%29" target="_blank">the ReSharper component model</a>) or even services only available via the `RawVsServiceProvider`. While this is generally fine, there are certain subtleties to consider when doing it.
 
 <!--more-->

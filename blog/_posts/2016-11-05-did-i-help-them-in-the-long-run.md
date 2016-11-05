@@ -2,6 +2,7 @@
 title: Did I help them in the long run?
 author: sven
 layout: article
+comments: true
 
 ---
 

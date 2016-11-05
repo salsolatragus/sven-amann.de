@@ -4,7 +4,10 @@ author: sven
 layout: article
 tags:
   - MobProgramming
+comments: true
+
 ---
+
 Today, I ran an experiment. I formed a mob of conference participants and let them program an [MVP][1] of the [POS Kata][2] in (8 * 3 =) 24 min. This high-speed [mob programming][3] turned out to be a lot of fun and quite an experience for the volunteers, the audience, and myself.
 
 <!-- more -->

@@ -4,7 +4,10 @@ author: sven
 layout: article
 tags:
   - Mob Programming
+comments: true
+
 ---
+
 Today, I ran my first Mob Programming with students. After this experiment I am, even more than before, convinced that Mob Programming is an effective way to scale hands-on software development training to relatively large groups.
 
 <!-- more -->

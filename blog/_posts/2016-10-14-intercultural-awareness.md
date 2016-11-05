@@ -2,6 +2,7 @@
 title: Intercultural Awareness Training
 author: sven
 layout: article
+comments: true
 
 ---
 

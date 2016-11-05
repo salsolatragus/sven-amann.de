@@ -4,7 +4,10 @@ author: sven
 layout: article
 tags:
   - ReSharper
+comments: true
+
 ---
+
 Have you ever wondered what ReSharper actions there are or searched whether there is some ReSharper action triggered by a certain user interaction that you want to handle? It&#8217;s actually fairly easy to find out what&#8217;s there. Just add the following class to your ReSharper plugin, run it in debug mode, and check the console output.
 
 {% highlight csharp %}

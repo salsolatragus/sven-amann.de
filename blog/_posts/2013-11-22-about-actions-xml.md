@@ -4,7 +4,10 @@ author: sven
 layout: article
 tags:
   - ReSharper
+comments: true
+
 ---
+
 `Actions.xml` is the nice little configuration how your R# actions are added to the menus. I recently found myself in a situation where my menu items didn&#8217;t show up, even though I copied over the configuration from a playground project where it worked.
 
 Frist thing you want to check is that the `ActionsXml` attribute is set in your `AssemblyInfo.cs`:

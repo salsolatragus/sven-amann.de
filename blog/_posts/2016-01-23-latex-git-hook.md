@@ -5,7 +5,10 @@ layout: article
 tags:
   - LaTeX
   - git
+comments: true
+
 ---
+
 I manage my LaTeX documents in git. I love it. It's good for the sanity of both me and my collaborators. Only sometimes, someone commits a broken document and whoever tries to compile it next has to figure out the error. Not always an easy task with LaTeX. What if there where an easy way to prevent this from happening?
 
 <!-- more -->
