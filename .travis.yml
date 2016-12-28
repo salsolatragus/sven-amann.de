@@ -15,4 +15,4 @@ install:
 - bundle install
 script:
 - bundle exec jekyll build
-- bundle exec htmlproofer ./_site --url-ignore "/www.slideshare.net/"
+- bundle exec htmlproofer ./_site --url-ignore "/www.slideshare.net/" --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|sven-amann\.de):"
