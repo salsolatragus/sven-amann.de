@@ -11,7 +11,7 @@ comments: true
 
 ---
 
-First thing you have to understand, when it comes to <a title="ReSharper 8 - Testing" href="http://confluence.jetbrains.com/display/NETCOM/2.10+Testing+%28R8%29" target="_blank">R# test projects</a>, is that they are really meant for <a title="Functional Testing - Wikipedia" href="http://en.wikipedia.org/wiki/Functional_testing" target="_blank">functional testing</a>. When you run the tests, R# starts an in-memory R# environment (that is what takes so long), loads your test data, and only then actually executes your tests.
+First thing you have to understand, when it comes to <a title="ReSharper 8 - Testing" href="http://confluence.jetbrains.com/display/NETCOM/2.10+Testing+%28R8%29" target="_blank">R# test projects</a>, is that they are really meant for <a title="Functional Testing - Wikipedia" href="https://en.wikipedia.org/wiki/Functional_testing" target="_blank">functional testing</a>. When you run the tests, R# starts an in-memory R# environment (that is what takes so long), loads your test data, and only then actually executes your tests.
 
 <!--more-->
 
