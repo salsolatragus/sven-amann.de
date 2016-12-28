@@ -27,4 +27,4 @@ Overall, the experiment was a success. You should definitely run one yourself so
  [1]: http://blog.jbrains.ca/permalink/what-makes-an-mvp
  [2]: http://online-training.jbrains.ca/courses/wbitdd-01/lectures/136762
  [3]: http://mobprogramming.org
- [4]: https://www.slideshare.net/mobile/SvenAmann/mob-programming-entwicklertag-frankfurt-2016
+ [4]: http://www.slideshare.net/SvenAmann/mob-programming-entwicklertag-frankfurt-2016
