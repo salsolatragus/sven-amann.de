@@ -2,6 +2,8 @@
 title: 'Use VisualStudio Dependencies in R# Plugins'
 author: sven
 layout: article
+tags:
+  - Visual Studio
 comments: true
 
 ---

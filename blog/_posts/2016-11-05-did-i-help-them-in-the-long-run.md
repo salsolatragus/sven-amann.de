@@ -2,6 +2,9 @@
 title: Did I help them in the long run?
 author: sven
 layout: article
+tags:
+  - Coaching
+  - Consulting
 comments: true
 
 ---
