@@ -69,6 +69,9 @@ layout: default
         {% when "bachelorthesis" %}
           {% assign bibtex_tag="bachelorthesis" %}
           {% assign bibtex_format=nil %}
+        {% when "article" %}
+          {% assign bibtex_tag="article" %}
+          {% assign bibtex_format="journal" %}
         {% endcase %}
         <pre class="bibtex">
 @{{ bibtex_tag }} {{ "{" }}{{ page.key }},
