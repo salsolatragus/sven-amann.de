@@ -34,5 +34,5 @@ Looking back at these first two hours of Mob Programming with students, I am ama
 
  [1]: http://mobprogramming.org/mob-programming-basics/
  [2]: http://zuill.us/WoodyZuill/
- [3]: http://www.agilealliance.org/programs/onagile-virtual-conference/
+ [3]: https://www.agilealliance.org/onagile2015/
  [4]: https://leanpub.com/mobprogrammingguidebook
