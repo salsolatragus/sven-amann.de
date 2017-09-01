@@ -38,3 +38,23 @@ salvaneschi:
   name: Salvaneschi
   firstname: Guido
   mail: salvaneschi@st.informatik.tu-darmstadt.de
+glanz:
+  name: Glanz
+  firstname: Leonid
+  mail: glanz@st.informatik.tu-darmstadt.de
+eichberg:
+  name: Eichberg
+  firstname: Michael
+  mail: eichberg@st.informatik.tu-darmstadt.de
+reif:
+  name: Reif
+  firstname: Michael
+  mail: reif@st.informatik.tu-darmstadt.de
+hermann:
+  name: Hermann
+  firstname: Ben
+  mail: hermann@st.informatik.tu-darmstadt.de
+lerch:
+  name: Lerch
+  firstname: Johannes
+  mail: lerch@st.informatik.tu-darmstadt.de
