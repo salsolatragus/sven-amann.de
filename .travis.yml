@@ -13,7 +13,7 @@ install:
 - bundle install
 script:
 - bundle exec jekyll build
-- bundle exec htmlproofer ./_site --http-status-ignore "999" --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|sven-amann\.de):" --check-html
+- bundle exec htmlproofer ./_site  --disable-external --allow-hash-href --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|sven-amann\.de):" --check-html
 
 after_success:
 - sudo apt-get install ncftp
