@@ -1,7 +1,12 @@
-# Skinny Bones Gemfile
 source "https://rubygems.org"
 
-gem 'jekyll'
-gem 'html-proofer'
-gem 'jekyll-sitemap'
+gem 'jekyll', '3.6.2'
+
+group :jekyll_plugins do
+  gem 'jekyll-sitemap'
+end
+
+gem 'pygments.rb'
 gem 'octopress', '~> 3.0'
+
+gem 'html-proofer'
