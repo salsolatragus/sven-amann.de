@@ -24,4 +24,4 @@ More information about the project are available on <a href="http://www.software
  [2]: http://kave.cc
  [3]: http://www.dpdhl.com/en/about_us/corporate_divisions/it_services.html
  [4]: /eko/mudetect/
- [5]: /publications/2016-05-MSR-MUBench-dataset.html
+ [5]: /publications/2016-05-MSR-MUBench-dataset/
