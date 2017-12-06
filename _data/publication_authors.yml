@@ -1,7 +1,7 @@
 proksch:
   name: Proksch
   firstname: Sebastian
-  mail: proksch@st.informatik.tu-darmstadt.de
+  mail: proksch@ifi.uzh.ch
 amann:
   name: Amann
   firstname: Sven
@@ -58,3 +58,19 @@ lerch:
   name: Lerch
   firstname: Johannes
   mail: lerch@st.informatik.tu-darmstadt.de
+beller:
+  name: Beller
+  firstname: Moritz
+  mail: m.m.beller@tudelft.nl
+gousios:
+  name: Gousios
+  firstname: Georgius
+  mail: g.gousios@tudelft.nl
+zaidman:
+  name: Zaidman
+  firstname: Andy
+  mail: a.e.zaidman@tudelft.nl
+panichella:
+  name: Panichella
+  firstname: Annibale
+  mail: annibale.panichella@uni.lu
