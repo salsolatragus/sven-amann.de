@@ -9,7 +9,8 @@ authors:
   - amann
   - nadi
   - mezini
-published_in: "Transaction on Software Engineering"
+published_in: "IEEE Transactions on Software Engineering"
+series: TSE
 year: 2017
 doi: 10.1109/TSE.2017.2655524
 abstract: >
