@@ -26,8 +26,17 @@ year: 3000
         {% assign author = site.data.publication_authors[author_id] %}
         {% if author.mail %}<a href="mailto:{{ author.mail }}">{% endif %}{{ author.firstname }} {{ author.name }}{% if author.mail %}</a>{% endif %}{% unless forloop.last %},{% endunless %}
       {% endfor %}<br/>
-      {% if publication.doi %}In{% elsif publication.publisher_link %}{% else %}To be published in{% endif %}
-	    <em>{{ publication.published_in }}</em><br/>
+      {% if publication.doi %}
+        In
+      {% elsif publication.publisher_link or publication.type == "venue" %}
+        
+      {% else %}
+        To be published in
+      {% endif %}
+	  <em>{{ publication.published_in }}</em><br/>
+      {% if publication.website %}
+        [<a href="{{ publication.website }}">website</a>]
+      {% endif %}
       {% if publication.doi %}
         [<a href="http://dx.doi.org/{{ publication.doi }}">publication (via DOI)</a>]
       {% endif %}

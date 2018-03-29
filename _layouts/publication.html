@@ -42,6 +42,9 @@ layout: default
               <li><a href="{{ site.url }}/publications/{{ page.preprint }}">Download preprint</a></li>
             {% endif %}
           {% endif %}
+          {% if page.website %}
+            <li><a href="{{ page.website }}">Visit website</a></li>
+          {% endif %}
           {% if page.doi %}
             <li><a href="http://dx.doi.org/{{ page.doi }}">Visit publisher page (via DOI)</a></li>
           {% endif %}
@@ -58,6 +61,10 @@ layout: default
             <li><a href="{{ page.images }}">See slide images</a></li>
           {% endif %}
         </ul>
+        
+        {% if page.type == "venue" %}
+        
+        {% else %}
         
         <h2>BibTeX</h2>
         {% case page.type %}
@@ -76,6 +83,9 @@ layout: default
         {% when "article" %}
           {% assign bibtex_tag="article" %}
           {% assign bibtex_format="journal" %}
+        {% else %}
+          {% assign bibtex_tag="misc" %}
+          {% assign bibtex_format="booktitle" %}
         {% endcase %}
         <pre class="bibtex">
 @{{ bibtex_tag }} {{ "{" }}{{ page.key }},
@@ -91,6 +101,9 @@ layout: default
   {{ page.additional_bibtex }}{% endif %}
 }
         </pre>
+        
+        {% endif %}
+        
 				<hr />
 				<footer class="page-footer">
 					{% if page.share != false %}{% include share-this.html %}{% endif %}
