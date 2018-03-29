@@ -36,7 +36,11 @@ layout: default
         <h2>Resources</h2>
         <ul>
           {% if page.preprint %}
-            <li><a href="{{ site.url }}/publications/{{ page.preprint }}">Download preprint</a></li>
+            {% if page.preprint contains "://" %}
+              <li><a href="{{ page.preprint }}">Download preprint</a></li>
+            {% else %}
+              <li><a href="{{ site.url }}/publications/{{ page.preprint }}">Download preprint</a></li>
+            {% endif %}
           {% endif %}
           {% if page.doi %}
             <li><a href="http://dx.doi.org/{{ page.doi }}">Visit publisher page (via DOI)</a></li>
