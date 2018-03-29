@@ -35,7 +35,11 @@ year: 3000
         [<a href="{{ publication.publisher_link }}">publication</a>]
       {% endif %}
       {% if publication.preprint != nul %}
-        [<a href="{{ site.url }}/publications/{{ publication.preprint }}">preprint</a>]
+        {% if publication.preprint contains "://" %}
+          [<a href="{{ publication.preprint }}">preprint</a>]
+        {% else %}
+          [<a href="{{ site.url }}/publications/{{ publication.preprint }}">preprint</a>]
+        {% endif %}
       {% endif %}
       {% if publication.artifact_page != nul %}
         [<a href="{{ publication.artifact_page }}">artifact page</a>]
