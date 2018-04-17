@@ -17,4 +17,4 @@ script:
 
 after_success:
 - sudo apt-get install ncftp
-- ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" ftp.sven-amann.de / ./_site/*
+- ncftpput -R -E -v -u "$FTP_USER" -p "$FTP_PASS" ftp.sven-amann.de / ./_site/*
