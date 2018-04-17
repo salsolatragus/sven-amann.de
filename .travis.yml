@@ -3,6 +3,11 @@ rvm:
 - 2.3.1
 cache: bundler
 
+addons:
+  apt:
+    packages:
+      - ncftp
+
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
@@ -16,5 +21,4 @@ script:
 - bundle exec htmlproofer ./_site  --disable-external --allow-hash-href --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|sven-amann\.de):" --check-html
 
 after_success:
-- sudo apt-get install ncftp
-- ncftpput -R -F -v -u "$FTP_USER" -p "$FTP_PASS" ftp.sven-amann.de / ./_site/*
+- ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" ftp.sven-amann.de / ./_site/*
