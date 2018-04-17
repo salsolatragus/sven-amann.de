@@ -34,8 +34,12 @@ script:
 This solves the build problem. Next, I needed a way to deploy the resulting site via FTP to my web space. Turned out this is surprisingly easy, using `ncftp` for the upload and [Travis's encryption feature](https://docs.travis-ci.com/user/environment-variables/) to hide my credentials. All I had to do was add two commands for execution after a successful build:
 
 {% highlight yaml %}
+addons:
+  apt:
+    packages:
+      - ncftp
+
 after_success:
-- sudo apt-get install ncftp
 - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" $FTP_HOST / ./_site/*
 {% endhighlight %}
 
