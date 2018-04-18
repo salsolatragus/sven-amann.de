@@ -19,12 +19,12 @@ In the past, I've also been a core contributor to [the KaVE Software Campus pr
 
 I served on the following committees:
 
-  * Organizing Committee of the [2nd Internation Workshop on API Usage and Evolution (WAPI'18)](https://w-api.github.io/2018/)
-  * Organizing Committee of the [MSR'18 Mining Challenge](https://2018.msrconf.org/track/msr-2018-Mining-Challenge)
-  * Organizing Committee of the [1st Internation Workshop on API Usage and Evolution (WAPI'17)](https://w-api.github.io/2017/)
-  * Program Committee of the [FSE'17 Tool Demonstrations](http://esec-fse17.uni-paderborn.de/call_tooldemos.php)
-  * Program Committee of the [MSR'17 Mining Challenge](http://2017.msrconf.org/#/challenge)
-  * Program Committee of the [SANER'17 Tools Track](http://saner.aau.at/call-for-papers-tool-track/)
+  * Organizing Committee of the [2nd International Workshop on API Usage and Evolution (WAPI '18)](https://w-api.github.io/2018/)
+  * Organizing Committee of the [MSR '18 Mining Challenge](https://2018.msrconf.org/track/msr-2018-Mining-Challenge)
+  * Organizing Committee of the [1st International Workshop on API Usage and Evolution (WAPI '17)](https://w-api.github.io/2017/)
+  * Program Committee of the [FSE '17 Tool Demonstrations](http://esec-fse17.uni-paderborn.de/call_tooldemos.php)
+  * Program Committee of the [MSR '17 Mining Challenge](http://2017.msrconf.org/#/challenge)
+  * Program Committee of the [SANER '17 Tools Track](http://saner.aau.at/call-for-papers-tool-track/)
 
 I am a teacher and student of Software Engineering topics in general. My activities include
 [university-level courses](http://www.stg.tu-darmstadt.de/staff/sven_amann/),
