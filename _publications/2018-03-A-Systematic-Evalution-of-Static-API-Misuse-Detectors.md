@@ -12,6 +12,7 @@ authors:
 published_in: "IEEE Transactions on Software Engineering"
 series: TSE
 year: 2018
+doi: 10.1109/TSE.2018.2827384
 preprint: https://arxiv.org/abs/1712.00242
 artifact_page: http://www.st.informatik.tu-darmstadt.de/artifacts/mustudy/
 abstract: >
