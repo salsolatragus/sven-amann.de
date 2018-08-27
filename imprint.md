@@ -14,7 +14,7 @@ Wienerstr. 93<br/>
 64287 Darmstadt<br/>
 <br/>
 Telefon: 0151 50385523<br/>
-E-Mail: info@sven-amann.de
+E-Mail: info (a) sven-amann (dot) de
 </address>
 
 ## Haftungsausschluss
