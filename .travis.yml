@@ -21,4 +21,4 @@ script:
 - bundle exec htmlproofer ./_site  --disable-external --allow-hash-href --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|sven-amann\.de):" --check-html
 
 after_success:
-- ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" ftp.sven-amann.de / ./_site/*
+- ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" w00952b3.kasserver.com / ./_site/*
