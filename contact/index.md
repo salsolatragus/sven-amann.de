@@ -4,15 +4,13 @@ menu_index: 5
 author: Sven
 layout: article
 ---
-Sven Amann, M.Sc.  
-Office: S2|02 A202  
-Email: <amann@informatik.tu-darmstadt.de>  
-Phone: +49 6151 16-21367  
-Fax: +49 6151 16-22361
+Dr. Sven Amann  
+Email: <amann@cqse.eu>  
+Phone: +49 172 1860063‬
 
-Software Technology Group  
-Hochschulstr. 10  
-64289 Darmstadt  
+CQSE GmbH  
+Centa-Hafenbrädl-Strasse 59  
+81249 München  
 Germany
 
-<http://www.stg.tu-darmstadt.de/staff/sven_amann/>
+<https://www.cqse.eu/en/team/sven-amann/>
