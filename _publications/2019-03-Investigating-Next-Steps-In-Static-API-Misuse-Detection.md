@@ -1,7 +1,7 @@
 ---
 key: ANNN+19
 slug: mudetect
-type: article
+type: conference
 title: "Investigating Next Steps in Static API-Misuse Detection"
 authors:
   - amann
