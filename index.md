@@ -24,6 +24,10 @@ I contribute to the following open source projects:
 * I am the project lead of [MUDetect][mudetect], an API-misuse detector.
 * I was a core contributor to [the KaVE Software Campus project][kave], in which we built a developer-assistance tool that helps developers learn and use third-party APIs quickly and correctly in their work.
 
+I received the following awards:
+
+* [MSR'19 FOSS Impact Paper Special Mention Award]({{ site.url }}/publications/foss-impact-award-msr19.jpeg) for the work presented in my paper [Investigating Next Steps In Static API Misuse Detection](http://sven-amann.de/publications/2019-03-Investigating-Next-Steps-In-Static-API-Misuse-Detection/)
+
 I served on the following committees:
 
   * Organizing Committee of the [2nd International Workshop on API Usage and Evolution (WAPI '18)](https://w-api.github.io/2018/)
