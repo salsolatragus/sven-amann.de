@@ -10,6 +10,7 @@ authors:
 published_in: "Proceedings of the 15th Working Conference on Mining Software Repositories"
 series: MSR
 year: 2018
+doi: 10.1145/3196398.3196400
 preprint: http://www.st.informatik.tu-darmstadt.de/artifacts/msr18-challenge/MSR-Challenge-Proposal.pdf
 artifact_page: https://2018.msrconf.org/event/msr-2018-mining-challenge-enriched-event-streams-a-general-dataset-for-empirical-studies-on-in-ide-activities-of-software-developers
 abstract: >

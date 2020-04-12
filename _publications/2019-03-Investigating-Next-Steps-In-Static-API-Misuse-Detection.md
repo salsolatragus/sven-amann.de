@@ -12,6 +12,7 @@ authors:
 published_in: "Proceedings of the 16th International Conference on Mining Software Repositories"
 series: MSR
 year: 2019
+doi: 10.1109/MSR.2019.00053
 preprint: mudetect-msr19.pdf
 artifact_page: http://www.st.informatik.tu-darmstadt.de/artifacts/mudetect/
 abstract: >
