@@ -23,4 +23,4 @@ sudo: false # route your build to the container-based infrastructure for a faste
 script: ./script/cibuild
 
 after_success:
-  - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" w00952b3.kasserver.com / ./_site/*
+  - curl --ftp-create-dirs -T _site/robots.txt ftp://${FTP_USER}:${FTP_PASS}@ftp.sven-amann.de/sven-amann.de/
