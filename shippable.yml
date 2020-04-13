@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+- 2.6.3
+
+env:
+  - secure: FGkU1b+kxBb5R3w+QIfHP6iGovcGm1mflg177mrCj6MIOlhYe9Sg80wgHE7oZDxLIpVv2ONpAkkecpw2bknJDnrJPPJvKekSedq8ZskoyRiVxVOKq/8IOYjucFkkifdAOAdFJGFNEz6zpCGoX99efQzwBGm8C/1GMYYrxJn2FtPjlmsYPmCs//uLJaRgSj9bEk8l0Ru3mRvF459BeK1GSjL6Yq0cHJWc2wSFp+7t5hvlvVRWaVsuxdbBW8Bm5k4sX/6s9TAeDHnl2qnQc1NbFTNPympkrhCraRuNZJi2dCu8WT5PY4oQaHaFdcFNPXnSl0cZe95AKUZ8UIRng9M7OA==
+
+build:
+  pre_ci:
+    - apt-get install ncftp
+  ci:
+    - bundle install
+    - ./script/cibuild
+  cache: true
+  cache_dir_list:
+    - /usr/local/rvm/gems/$(rvm strings 2.6.3)/gems
+    - /usr/local/rvm/gems/$(rvm strings 2.6.3)/specifications
+    - $SHIPPABLE_BUILD_DIR
+  on_success:
+    - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" w00952b3.kasserver.com / ./_site/*
