@@ -7,5 +7,11 @@ env:
 
 build:
   ci:
+    - bundle package --all
     - ./build/build
     - ./build/deploy
+  cache: true
+  cache_dir_list:
+    - /usr/local/rvm/gems/$(rvm strings 2.6.3)/gems
+    - /usr/local/rvm/gems/$(rvm strings 2.6.3)/specifications
+    - $SHIPPABLE_BUILD_DIR
