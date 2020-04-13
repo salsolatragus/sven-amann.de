@@ -7,14 +7,10 @@ env:
 
 build:
   pre_ci:
-    - apt-get install ncftp
   ci:
-    - bundle install
     - ./script/cibuild
   cache: true
   cache_dir_list:
     - /usr/local/rvm/gems/$(rvm strings 2.6.3)/gems
     - /usr/local/rvm/gems/$(rvm strings 2.6.3)/specifications
     - $SHIPPABLE_BUILD_DIR
-  on_success:
-    - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" w00952b3.kasserver.com / ./_site/*
