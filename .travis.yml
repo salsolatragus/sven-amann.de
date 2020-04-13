@@ -1,12 +1,14 @@
 language: ruby
 rvm:
-- 2.3.1
-cache: bundler
+- 2.6.3
+
+cache: bundler # caching bundler gem packages will speed up build
 
 addons:
   apt:
     packages:
       - ncftp
+      - libcurl4-openssl-dev
 
 env:
   global:
@@ -14,11 +16,11 @@ env:
   - secure: "UL9pFa4zHwKmE2G+fThCH9ZQp4jXBh+ca2Fw+yv8VaDdhkDPuAcNwXm0+CGE/z7pTEqlfthh/f603q1NBnf/oC4Am1BSNl94rzQi0sBrk4Oe5dcFoXVT/Jv1qF6dQy3jBLrACcdWD4eUHEiWGFm5fhuikjxxOQ4jQJLea62HoalZoWgpeTXSBsGPzGLJBXpZt/43fYRvsF5Kg3YWqXOVvu4AwuEtG3qcQu/ERJBmI0gPptzTYsX8B1ZxoXTHrAM5Xe3oLcBJORInvQnkML6oOzbORskChyezo0EskfOthH4lJf8HDcd/1b+3UGLaz0UpxuB2Dv7W3TlNO+wTPfsaVgJ3RP8Z6bfOPGPe4nsNhYBJW44QErCxGomzjr/1v3sxX+hEeIYHj7sKWvnX2manhXHxNQtboYQ5jGGTzCt+/+B5Ly7s/T3s5NDnNV3yF/OvktjuXPsXrvGc+nT7QpZiKhxN5jFnNT8+l1EszKmUXpCxfXYsJ1mmE6O+EqyZ98THIAbOqonmU43A42SrE3IRaIeKyyeLLSjhpV9cn29/EmO7wNmfHfVCLiIVfx9e1rP7OPprsgjCG6dEAFf74S732Ou/RPZuzuMAlW7JJU7yDs0HaDhm3f82Jdfn48Gk0OQceFkVrkFFuCj4rWh6s895sQ87uJ0KSRJzbc4T/2F25Ro="
   - secure: "TfWxn6uKnuF3dLywhi77zx9EyURcAqI3BN0y99HZdw7248aeTAltBNCZIKQwTniC/oPSz6G/EH5W4JNGDcFAeApvnagiulTLcypi5vwdUej0A2/rjs+QgNo6c3hhw8h2Ifr1vgp8I5nf+O+BJcfF2qKpwRWUKk5ZPsbRVFAg1RGOCITE2jIlbK3PqojtAkfQ1PrJmnZfP70I+oDACy1FsVny4+d2sOcHEHuLjA1+sw9o0npD4beB2nRfKwdjr3f/0G1IZPJCClpdulaW813nroj6xfSkMfwKMb84H1OO9iHBD+tx7D/NWjlLLNyfHOvv1T9J/4yoLMyvdLwpV0N005b14SOm4E8JMNr48iHCT8uiOz7Qqp9Ipb6GEIGUKxCMCKA1uQ9WhwlsI2/0fRvKOfFYECzDOR43M7Gd/Sm10GeueTsWkjpPil3yFn0LmXXudZlqrm6Y+qDtz0EeuQoUzYCATCWlDAHGp+opWPxkKJ25vZ8Kp/xn27+PVcQLBM/7+9D7sO/kzn1q8MmM6QJuqmOe3RDEcrRqrdCOV2IR/Q4suA4HjVcg8WZUhdqJb81xNP+3UySfPlbFOI7tIv/d+IyeO7DcWQuR8OYY0qfv8anBjRciB+f71dRfLpHEOr2G01+sbsSHDMXOzSMWvDIwdmwthGcK4kbyqtCVjHTRoMY="
 
-install:
-- bundle install
-script:
-- bundle exec jekyll build
-- bundle exec htmlproofer ./_site  --disable-external --allow-hash-href --url-swap "https?\:\/\/(127\.0\.0\.1\:4000|localhost\:4000|sven-amann\.de):" --check-html
+sudo: false # route your build to the container-based infrastructure for a faster build
+
+# Assume bundler is being used, therefore
+# the `install` step will run `bundle install` by default.
+script: ./script/cibuild
 
 after_success:
-- ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" w00952b3.kasserver.com / ./_site/*
+  - ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" w00952b3.kasserver.com / ./_site/*
