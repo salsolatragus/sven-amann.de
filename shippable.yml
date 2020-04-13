@@ -7,4 +7,5 @@ env:
 
 build:
   ci:
-    - ./script/cibuild
+    - ./build/build
+    - ./build/deploy

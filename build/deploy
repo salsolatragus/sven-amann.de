@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+
+apt-get install ncftp
+ncftpput -R -v -u "$FTP_USER" -p "$FTP_PASS" w00952b3.kasserver.com / ./_site/*
