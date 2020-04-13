@@ -6,11 +6,5 @@ env:
   - secure: g6yK1GxsyYxM6s9YnOOHxEontOJKj9uE2WNGs2ib7/lmvsppwgysdAPnySm8OQrREqpeaPwiYgRo6ff7+ZcExAieAlx5Fpp/8JQDgXGAi6lkaT5NqEOcBajuSzXR/L7dAwARIhD9dfqpwQA7rJ8lX17R+PqJscEuTzqx2DJXbZBPKO2SU/O43hpxTiX185RYzyHoe7TIwu+2xSE74gNXj7VSJry0xfU62VmYd1iOoF52hp6/qby6q79axMF20Z7Ekt6b7zAfnl6n0Z+9+X5HdBoxeWlSuz+5TsjsL0TXAOZeQ6Gr4WAvTX4BDgZJ+c9eH17PomgmyMgFWuBTfb5Nvg==
 
 build:
-  pre_ci:
   ci:
     - ./script/cibuild
-  cache: true
-  cache_dir_list:
-    - /usr/local/rvm/gems/$(rvm strings 2.6.3)/gems
-    - /usr/local/rvm/gems/$(rvm strings 2.6.3)/specifications
-    - $SHIPPABLE_BUILD_DIR
